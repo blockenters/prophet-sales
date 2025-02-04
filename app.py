@@ -88,10 +88,12 @@ def analyze_seasonality(df):
     }
 
 def main():
-    st.title("매출 예측 대시보드")
-    
     fontRegistered()
+    plt.rc('font', family='NanumGothic')    
     
+
+    st.title("매출 예측 대시보드")
+
     df = load_data()
     
     # 기본 데이터 분석
